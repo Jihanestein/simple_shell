@@ -1,5 +1,14 @@
 #include "shell.h"
 
+int main()
+{
+	info_t info;
+	sh_cd(&info);
+	sh_help(&info);
+	sh_exit(&info);
+
+	return (0);
+}
 
 /**
   * sh_cd - change current directory
